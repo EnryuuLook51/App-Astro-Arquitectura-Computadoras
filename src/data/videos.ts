@@ -23,7 +23,7 @@ export const videosData: Record<string, Topic[]> = {
         {
           id: 1,
           title: "Semana 1 - Introducción",
-          group: "Saldarriaga & Yomona",
+          group: "",
           driveId: "PENDIENTE",
           description: "Video pendiente de subida"
         }
@@ -37,7 +37,7 @@ export const videosData: Record<string, Topic[]> = {
         {
           id: 2,
           title: "Semana 2 - Segmentación de Cauce",
-          group: "Saldarriaga & Yomona",
+          group: "Rubio Gonzales & Valentin Valera & Castillo Toribio",
           driveId: "1gsY_cUXa8aYzQ41BGr4vuOag3pAHWBgP",
           description: "Segmentación de cauce y procesadores segmentados"
         }
@@ -51,7 +51,7 @@ export const videosData: Record<string, Topic[]> = {
         {
           id: 3,
           title: "Semana 3 - Procesadores Superescalares",
-          group: "Saldarriaga & Yomona",
+          group: "Norabuena Melgarejo, Crisanto Santiago & Sander Sleyther",
           driveId: "1TlfPyAbkmd5TW-2rIDnQX-fz9ZP6gwrR",
           description: "Microarquitectura y principios de funcionamiento"
         }
@@ -65,7 +65,7 @@ export const videosData: Record<string, Topic[]> = {
         {
           id: 4,
           title: "Semana 4 - Implementación de Superescalares",
-          group: "Robles, Rodriguez & Valdiviezo",
+          group: "Robles Cueva, Rodriguez Cordova & Valdiviezo Loloy",
           driveId: "1vrKkBEbO18jsVck5xTJ3nKo-82O0HnvS",
           description: "Implementación de procesadores superescalares"
         }
@@ -79,7 +79,7 @@ export const videosData: Record<string, Topic[]> = {
         {
           id: 5,
           title: "Semana 5 - Procesadores Vectoriales",
-          group: "Giraldo, Marcelo & Paredes",
+          group: "Giraldo Barreto, Marcelo Yamauchi & Paredes Flores",
           driveId: "1j94ecFbw3utGON5VQ-3VtsT4ZeCrmCNZ",
           description: "VPU: Vector Processor Unit - Arquitectura y aplicaciones"
         }
