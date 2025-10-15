@@ -1,0 +1,58 @@
+---
+import TopicCard from "../components/TopicCard";
+import Layout from "../layouts/Layout.astro";
+
+import { videosData } from "../data/videos";
+
+const topics = videosData.unidad1;
+---
+
+<Layout title="Unidad 1 - Arquitectura de Computadoras">
+  <div
+    class="min-h-screen bg-gradient-to-br from-white via-red-50 to-white"
+  >
+    <div class="container mx-auto px-4 py-8">
+      <!-- Back Button -->
+      <a
+        href="/"
+        class="inline-flex items-center gap-2 text-red-400 hover:text-red-300 mb-6 transition-colors"
+      >
+        <svg
+          width="20"
+          height="20"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+        >
+          <path d="M19 12H5M12 19l-7-7 7-7"></path>
+        </svg>
+        Volver a unidades
+      </a>
+
+      <!-- Header -->
+      <div class="max-w-5xl mx-auto mb-8">
+        <h2 class="text-4xl font-bold text-gray-900 mb-2">
+          Unidad 1: Fundamentos
+        </h2>
+        <p class="text-gray-700 text-lg">
+          Selecciona un tema para ver los videos
+        </p>
+      </div>
+
+      <!-- Topics Grid -->
+      <div class="max-w-5xl mx-auto grid md:grid-cols-2 gap-6">
+        {
+          topics.map((topic) => (
+            <TopicCard
+              id={topic.id}
+              name={topic.name}
+              slug={topic.slug}
+              client:load
+            />
+          ))
+        }
+      </div>
+    </div>
+  </div>
+</Layout>
